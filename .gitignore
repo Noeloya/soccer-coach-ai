@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.venv/
+
+# Data files
+data/videos/*.mp4
+data/videos/*.avi
+data/outputs/
+*.weights
+*.pt
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+config.yaml
+
+# Models (large files)
+data/models/*.pt
+data/models/*.onnx
