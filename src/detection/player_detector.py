@@ -77,7 +77,7 @@ class PlayerDetector:
             3: 'referee',
             'default': 'object'
         }
-        for box in boxes:
+        for box in boxes: #iterate through the boxes and draw them
             x1, y1, x2, y2 = box.xyxy[0].cpu().numpy().astype(int)
             confidence = box.conf[0].cpu().numpy()
             if hasattr(box, 'cls') and box.cls is not None:
